@@ -4,34 +4,26 @@
 ///////////////////////////////////////////////////////////////////////////
 //
 //  Function Name : Display
-//  Description : Prints stars equal to the given number using while loop
-//  Input : int
+//  Description : Prints Marvellous Infosystem five times
+//  Input : void
 //  Output : void
 //  Author : Vedika Sudhakar Padwal
-//  Date : 20/10/2026
+//  Date : 21/10/2026
 //
 ///////////////////////////////////////////////////////////////////////////
 
-void Display(int iNo)
+void Display()
 {
-    int iCnt = 0;
-    iCnt = 1;
-
-    while(iNo >= iCnt)
+    int i = 0;
+    for(i = 1; i <= 5 ; i++)
     {
-        printf("*\t");
-        iNo--;
+        printf("Marvellous Infosystem\n");
     }
 }
 
 int main()
 {
-    int iValue = 0;
-
-    printf("Enter number :\n");
-    scanf("%d",&iValue);
-
-    Display(iValue);
+    Display();
 
     return EXIT_SUCCESS;
 }

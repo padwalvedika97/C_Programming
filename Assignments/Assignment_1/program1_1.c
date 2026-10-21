@@ -1,37 +1,40 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
 //
-//  Function Name : Display
-//  Description : Prints stars equal to the given number using while loop
-//  Input : int
-//  Output : void
-//  Author : Vedika Sudhakar Padwal
-//  Date : 20/10/2026
+//      Function Name : Divide
+//      Description : it performs division and returns quotient
+//      Input : int , int
+//      Output : int
+//      Author : Vedika Sudhakar Padwal
+//      Date : 21/10/2026
 //
-///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
 
-void Display(int iNo)
+int Divide(int iNo1,int iNo2)
 {
-    int iCnt = 0;
-    iCnt = 1;
+    int iAns = 0;
 
-    while(iCnt <= iNo)
+    if(iNo2 == 0)
     {
-        printf("*\t");
-        iCnt++;
+        return -1;
+    }
+    else
+    {
+       iAns = iNo1 / iNo2 ;
+       return iAns ;
     }
 }
 
 int main()
 {
-    int iValue = 0;
+    int iValue1 = 15, iValue2 = 5;
+    int iRet = 0;
 
-    printf("Enter number :\n");
-    scanf("%d",&iValue);
+    iRet = Divide(iValue1,iValue2);
 
-    Display(iValue);
+    printf("Division is : %d",iRet);
 
     return EXIT_SUCCESS;
 

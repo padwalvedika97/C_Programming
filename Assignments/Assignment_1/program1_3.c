@@ -1,36 +1,33 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-/////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
 //
-//      Function Name : Display
-//      Description : Prints "Hello" if number is less than 10; otherwise, prints "Demo". 
-//      Input : int
-//      Output : void
-//      Author : Vedika Sudhakar Padwal
-//      Date : 20/10/2026
+//  Function Name : Display
+//  Description : Prints number from 5 to 1 using while loop
+//  Input : void
+//  Output : void
+//  Author : Vedika Sudhakar Padwal
+//  Date : 21/10/2026
 //
-//////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
 
-void Display(int iNo)
+void Display()
 {
-    if(iNo < 10)
+    int i = 0;
+    i = 5;
+
+    while(i > 0)
     {
-        printf("Hello");
-    }
-    else
-    {
-        printf("Demo");
+        printf("%d\t",i);
+        i--;
     }
 }
+
 int main()
 {
-    int iValue = 0;
-
-    printf("Enter number :\n");
-    scanf("%d",&iValue);
-
-    Display(iValue);
+    Display();
 
     return EXIT_SUCCESS;
 }
+ 
